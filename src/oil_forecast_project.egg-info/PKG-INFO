@@ -1,3 +1,24 @@
+Metadata-Version: 2.4
+Name: oil-forecast-project
+Version: 0.1.0
+Summary: Reproducible evaluation of long-term oil price forecasts for the UCB energy project.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: numpy>=1.24
+Requires-Dist: openpyxl>=3.1
+Requires-Dist: pandas>=2.0
+Requires-Dist: python-pptx>=1.0
+Requires-Dist: requests>=2.31
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: seaborn>=0.13
+Requires-Dist: statsmodels>=0.14
+Requires-Dist: XlsxWriter>=3.1
+Requires-Dist: yfinance>=0.2.54
+Provides-Extra: dev
+Requires-Dist: pytest>=9.0; extra == "dev"
+
 # 290 Energy Project: Long-Term Oil Forecast Evaluation
 
 This repository turns the course proposal into a reproducible analysis pipeline focused on long-term oil price forecast evaluation.

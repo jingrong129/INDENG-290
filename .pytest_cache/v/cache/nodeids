@@ -1,0 +1,10 @@
+[
+  "tests/test_additional.py::test_build_bias_corrected_eia_forecasts_uses_only_prior_errors",
+  "tests/test_additional.py::test_summarize_cpi_brent_relationship_returns_expected_metrics",
+  "tests/test_datasets.py::test_build_actual_brent_annual_aggregates_and_deflates",
+  "tests/test_datasets.py::test_build_annual_cpi_converts_to_2025_dollars",
+  "tests/test_datasets.py::test_build_evaluation_panel_filters_horizons_and_requires_realized_values",
+  "tests/test_datasets.py::test_build_release_month_features_uses_known_release_month_and_real_prices",
+  "tests/test_datasets.py::test_write_benchmark_summary_compares_eia_and_random_walk",
+  "tests/test_metrics.py::test_summarize_errors_returns_expected_columns"
+]

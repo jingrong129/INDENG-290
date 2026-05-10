@@ -24,9 +24,12 @@ Rolling AR + Futures              3            9 17.960273  0.325135 40.109557 5
 Rolling AR + Futures              5            7  7.571707  0.244169 36.614364 53.230335 0.539137
 
 ## CPI and Brent relationship checks
-- Level correlation between nominal Brent and CPI is descriptive and may reflect common time trends.
-- Year-over-year nominal Brent growth and CPI inflation show positive co-movement.
-- Real Brent growth remains partly related to CPI inflation, so the report includes a CPI diagnostic caveat.
+                                    metric     value                                                                interpretation
+     corr_nominal_brent_level_vs_cpi_level  0.752935     Level correlation is descriptive only and may reflect common time trends.
+corr_nominal_brent_growth_vs_cpi_inflation  0.519379    Year-over-year co-movement between nominal Brent growth and CPI inflation.
+   corr_real_brent_growth_vs_cpi_inflation  0.475777 Checks whether CPI comovement remains after converting Brent into real terms.
+             avg_deflation_gap_usd_per_bbl 23.631896         Average difference between real-2025 and nominal annual Brent prices.
+          median_deflation_gap_usd_per_bbl 21.266521             Median real-versus-nominal adjustment across annual observations.
 
 ## Notes
 - Main analysis uses EIA Brent Spot forecasts from AEO Table 12, deflated to 2025 dollars with CPI.
@@ -35,3 +38,4 @@ Rolling AR + Futures              5            7  7.571707  0.244169 36.614364 5
 - Bias-corrected EIA forecasts are estimated with an expanding-window historical mean error by horizon, using only prior forecast errors to avoid look-ahead bias.
 - The market-augmented model uses Brent front-month futures from Yahoo Finance (`BZ=F`) as a market-information proxy.
 - World Bank archive data are downloaded as supplementary material because the forecast object is `Crude oil, avg`, not exact Brent.
+- Relative project ranking cannot be tested empirically in this repo because no project-level cash-flow panel is included; the current code only supports forecast-side evaluation.

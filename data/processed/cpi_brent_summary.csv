@@ -1,0 +1,6 @@
+metric,value,interpretation
+corr_nominal_brent_level_vs_cpi_level,0.7529349010365302,Level correlation is descriptive only and may reflect common time trends.
+corr_nominal_brent_growth_vs_cpi_inflation,0.5193794371973139,Year-over-year co-movement between nominal Brent growth and CPI inflation.
+corr_real_brent_growth_vs_cpi_inflation,0.4757768934582391,Checks whether CPI comovement remains after converting Brent into real terms.
+avg_deflation_gap_usd_per_bbl,23.631896178567768,Average difference between real-2025 and nominal annual Brent prices.
+median_deflation_gap_usd_per_bbl,21.266520694437194,Median real-versus-nominal adjustment across annual observations.

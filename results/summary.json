@@ -1,0 +1,7 @@
+{
+  "mean_rmse": {
+    "linear_regression": 1.6056359440335832,
+    "random_forest": 2.192806921372952,
+    "gradient_boosting": 1.927175822816778
+  }
+}
